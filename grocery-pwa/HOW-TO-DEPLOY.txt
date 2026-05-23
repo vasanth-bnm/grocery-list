@@ -1,0 +1,71 @@
+# Grocery List PWA — Deployment Guide
+
+## What's in this package
+- index.html   — the full app
+- manifest.json — makes it installable as an app
+- sw.js         — service worker (enables offline use)
+- icons/        — app icons (192x192 and 512x512)
+
+---
+
+## Step 1 — Create a GitHub account
+Go to https://github.com and sign up (free).
+
+---
+
+## Step 2 — Create a new repository
+1. Click the "+" button (top right) → "New repository"
+2. Name it: grocery-list  (or anything you like)
+3. Set it to Public
+4. Click "Create repository"
+
+---
+
+## Step 3 — Upload the files
+1. In your new repo, click "uploading an existing file"
+2. Drag and drop ALL files from this zip:
+   - index.html
+   - manifest.json
+   - sw.js
+   - icons/icon-192.png
+   - icons/icon-512.png
+   
+   IMPORTANT: For the icons folder, upload the files into a folder called "icons"
+   You can do this by dragging the icons folder directly.
+
+3. Click "Commit changes"
+
+---
+
+## Step 4 — Enable GitHub Pages
+1. Go to your repo → Settings tab
+2. Scroll down to "Pages" (left sidebar)
+3. Under "Source", select: Deploy from a branch
+4. Branch: main  |  Folder: / (root)
+5. Click Save
+6. Wait ~2 minutes, then your app will be live at:
+   https://YOUR-USERNAME.github.io/grocery-list/
+
+---
+
+## Step 5 — Install on your Android phone
+1. Open Chrome on your Android phone
+2. Go to: https://YOUR-USERNAME.github.io/grocery-list/
+3. Chrome will show a banner: "Add Grocery List to Home screen" → tap it
+   (If no banner appears: tap the 3-dot menu → "Add to Home screen")
+4. Tap "Add" on the confirmation dialog
+5. The app icon appears on your home screen!
+
+---
+
+## Done!
+- Opens full screen, no browser bar
+- Works offline after first load
+- Data saved locally on your phone
+- Share the URL with anyone to use on their device too
+
+---
+
+## Updating the app later
+Just edit index.html on GitHub and commit — the app updates automatically.
+(You may need to clear the app cache on your phone once: Settings → Apps → Chrome → Clear cache)
